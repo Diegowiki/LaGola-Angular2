@@ -1,10 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
 
 import { MaterializeModule } from 'ng2-materialize';
+import { ROUTES } from './app.routing';
 
 import { AppComponent } from './app.component';
+import { HomeModule } from './home/home.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +16,10 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MaterializeModule.forRoot()
+    RouterModule.forRoot(ROUTES),
+    MaterializeModule.forRoot(),
+
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
