@@ -1,0 +1,33 @@
+@import "../../colors";
+@import "../../_variables";
+
+.header-background {
+  box-shadow: 0 -1px 32px rgba(0, 0, 0, 0.33) inset;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  //background-color: rgba(255, 255, 255, 0.33);
+}
+
+.title{
+    text-align: center;
+    color: $color2;
+    font-size: 100px;
+    text-shadow: 2px 1px 2px rgba(150, 150, 150, 1);
+    @media #{$medium-and-up} {
+        font-size: 100px;
+    }
+    //text-shadow: 0px 0px 22px rgba(0, 0, 0, 1);    //text-shadow: 2px 0 0 $color2, -2px 0 0 $color2, 0 2px 0 $color2, 0 -2px 0 $color2, 1px 1px $color2, -1px -1px 0 $color2, 1px -1px 0 $color2, -1px 1px 0 $color2;
+}
+
+.subtitle{
+    text-align: center;
+    color: $color2;
+    font-size: 50px;
+    text-shadow: 2px 1px 2px rgba(150, 150, 150, 1);
+
+    @media #{$medium-and-up} {
+        font-size: 60px;
+    }
+}

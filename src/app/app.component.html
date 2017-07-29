@@ -1,14 +1,17 @@
 <header>
   <mz-sidenav #sidenav [id]="'sidenav'" [collapseButtonId]="'btn-sidenav'" [fixed]="'true'" [backgroundClass]="'sidenav-background'">
 
-    <mz-sidenav-header class="sidenav-header">
+    <mz-sidenav-header class="sidenav-header z-depth-1">
       <a [routerLink]="'home'">
         <img class="laGola-logo" src="assets/LaGola_Red1.jpg">
       </a>
     </mz-sidenav-header>
 
     <mz-sidenav-link>
-      <a [routerLink]="'home'" class="waves-effect">Second Link With Waves</a>
+      <a [routerLink]="'home'" class="waves-effect">Inicio</a>
+    </mz-sidenav-link>
+    <mz-sidenav-link>
+      <a [routerLink]="'home'" class="waves-effect">Contacto</a>
     </mz-sidenav-link>
   </mz-sidenav>
 
