@@ -16,37 +16,27 @@ header {
     .sidenav-button {
       position: fixed;
       top: 16px;
-      right: 16px;
+      left: 16px;
       z-index: 24;
     }
   }
 
   .sidenav-header {
-    background: rgba(0,0,0,0.14);
+    //background: rgba(0,0,0,0.14);
     display: block;
-    padding-top: 10px;
 
     a {
       height: auto;
+      padding: 0;
     }
   }
 
-  .angular-logo {
+  .laGola-logo {
     display: block;
     margin: 0 auto;
-    width: 150px;
+    width: 100%;
   }
 
-  .materialize-logo {
-    display: block;
-    margin: -62px auto 0;
-  }
-
-  .materialize-name {
-    background: rgba(0,0,0,0.14);
-    font-weight: 200;
-    padding: 14px;
-  }
 }
 
 main {

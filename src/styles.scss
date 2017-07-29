@@ -1,6 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 @import "colors";
 
+@font-face {
+font-family: 'Ailerons'; 
+src: url('assets/Ailerons.ttf') ; 
+font-style: normal;
+}
+
 body {
     background-color: $color1;
+}
+
+h1, h2, h3 {
+    font-family: Ailerons;
 }
