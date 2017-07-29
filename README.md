@@ -1,2 +1,1 @@
-#build windows 10 fixed error
-//ng build --prod --aot=false
+Web application built with Angular 4
