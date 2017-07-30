@@ -3,8 +3,12 @@
 
 .container {
     background-image: url("../../assets/fondoMenu.jpg");
+
     height: 100vh;
     width: 100% !important;
     padding-left: 2%;
     padding-right: 2%;
+     @media #{$medium-and-down} {
+        padding-top: 55px;
+    }
   }
