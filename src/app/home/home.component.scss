@@ -49,10 +49,19 @@
 }
 
 .header-text{
-    margin-top: 20px;
-    margin-bottom: 55px;
+    margin-top: 15px;
+    margin-bottom: 45px;
       @media #{$medium-and-up} {
-        margin-bottom: 50px;
+        margin-bottom: 40px;
       
     }
+}
+
+.mainContent{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
 }

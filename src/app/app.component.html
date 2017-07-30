@@ -11,6 +11,15 @@
       <a [routerLink]="'home'" class="waves-effect">Inicio</a>
     </mz-sidenav-link>
     <mz-sidenav-link>
+      <a [routerLink]="'home'" class="waves-effect">Menús</a>
+    </mz-sidenav-link>
+    <mz-sidenav-link>
+      <a [routerLink]="'home'" class="waves-effect">Carta</a>
+    </mz-sidenav-link>
+    <mz-sidenav-link>
+      <a [routerLink]="'home'" class="waves-effect">Opina</a>
+    </mz-sidenav-link>
+    <mz-sidenav-link>
       <a [routerLink]="'home'" class="waves-effect">Contacto</a>
     </mz-sidenav-link>
   </mz-sidenav>
@@ -18,6 +27,25 @@
   <button mz-button class="sidenav-button hide-on-large-only" id="btn-sidenav" [float]="true" [large]="true">
     <i mz-icon-mdi [icon]="'menu'"></i>
   </button>
+  <div class="fixed-action-btn horizontal">
+    <a class="btn-floating btn-large">
+      <i class="large material-icons txt-color2">share</i>
+    </a>
+    <ul>
+      <li>
+        <a mz-button [float]="'true'" ButtonType="LinkButton" href="https://es-es.facebook.com/lagolacomerybeber/" target="_blank">
+            <i mz-icon-mdi
+            [align]="'right'"
+            [icon]="'facebook'"
+            [size]="'small'">
+            </i>
+        </a>
+      </li>
+      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+    </ul>
+  </div>
 </header>
 
 <main>
