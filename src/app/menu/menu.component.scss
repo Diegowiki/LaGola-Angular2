@@ -1,5 +1,10 @@
 @import "../../colors";
 @import "../../_variables";
 
-
-
+.container {
+    background-image: url("../../assets/fondoMenu.jpg");
+    height: 100vh;
+    width: 100% !important;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
