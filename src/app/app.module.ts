@@ -8,6 +8,8 @@ import { ROUTES } from './app.routing';
 
 import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
+import { MenuModule } from './menu/menu.module';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { HomeModule } from './home/home.module';
     RouterModule.forRoot(ROUTES),
     MaterializeModule.forRoot(),
 
-    HomeModule
+    HomeModule,
+    MenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

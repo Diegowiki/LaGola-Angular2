@@ -54,14 +54,13 @@ main {
 
   .container {
     width: 100% !important;
-
-    @media #{$large-and-up} {
-      margin: 0 0%;
-    }
+    padding-left: 2%;
+    padding-right: 2%;
   }
 }
 
 .button-share{
+      color: $color1;
      -moz-border-radius: 50%!important;
      -webkit-border-radius: 50%!important;
      border-radius: 50%!important;
