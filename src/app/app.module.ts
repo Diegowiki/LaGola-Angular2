@@ -9,7 +9,7 @@ import { ROUTES } from './app.routing';
 import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
 import { MenuModule } from './menu/menu.module';
-
+import { ContactModule } from './contact/contact.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,8 @@ import { MenuModule } from './menu/menu.module';
     MaterializeModule.forRoot(),
 
     HomeModule,
-    MenuModule
+    MenuModule,
+    ContactModule
   ],
   providers: [],
   bootstrap: [AppComponent]

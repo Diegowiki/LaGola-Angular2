@@ -1,0 +1,16 @@
+@import "../../colors";
+@import "../../_variables";
+
+.bgImg {
+    background-image: url("../../assets/fondo_contacto.jpg");
+    position: fixed;
+    top:0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+
+    background-size: cover;
+     @media #{$medium-and-down} {
+        padding-top: 55px;
+    }
+  }
