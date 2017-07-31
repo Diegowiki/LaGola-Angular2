@@ -1,22 +1,24 @@
-<div class="container">
-    <div class="row">
-        <mz-card class="col s12 m12 l6">
-            <mz-card-title>
-                <h3>Menu Diario</h3>
-            </mz-card-title>
-            <mz-card-content>
-                I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup
-                to use effectively.
-            </mz-card-content>
-        </mz-card>
-        <mz-card class="col s12 m12 l6">
-            <mz-card-title>
-                <h3>fin de semana</h3>
-            </mz-card-title>
-            <mz-card-content>
-                I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup
-                to use effectively.
-            </mz-card-content>
-        </mz-card>
-    </div>
+<div class="bgImg"></div>
+
+<div class="row ">
+    <mz-card *ngFor="let menu of menus" class="col s12 m12 l6" [backgroundClass]="'txt-color2 bg-color1 z-depth-4 myFlex'">
+        <mz-card-title>
+            <h1 class="titleMenu">{{menu.title}}</h1>
+        
+        </mz-card-title>
+        <mz-card-content style="text-align:center;">
+            <h4>{{menu.header1}}</h4><br>
+            <h5  *ngFor="let primero of menu.primeros">{{primero}}<br></h5><br>
+            <div class="divider"></div>
+            <br>
+            <h4>{{menu.header2}}</h4>
+            <br>
+            <h5 *ngFor="let segundo of menu.segundos">{{segundo}}<br></h5>
+            <br>
+            <div class="divider"></div>
+            <br>
+            <h6>*{{menu.included}}</h6>
+            
+        </mz-card-content>
+    </mz-card>
 </div>

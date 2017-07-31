@@ -7,5 +7,7 @@ import { MzSidenavComponent } from 'ng2-materialize';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
+  constructor(private router: Router){
+
+  }
 }

@@ -2,13 +2,13 @@
   <mz-sidenav #sidenav [id]="'sidenav'" [collapseButtonId]="'btn-sidenav'" [fixed]="'true'" [backgroundClass]="'sidenav-background'">
 
     <mz-sidenav-header class="sidenav-header z-depth-1">
-      <a [routerLink]="'home'">
+      <a [routerLink]="'/'">
         <img class="laGola-logo" src="assets/LaGola_Red1.jpg">
       </a>
     </mz-sidenav-header>
 
     <mz-sidenav-link>
-      <a [routerLink]="'home'" class="waves-effect">Inicio</a>
+      <a [routerLink]="'home'" routerLinkActive="homeActive" class="waves-effect">Inicio</a>
     </mz-sidenav-link>
     <mz-sidenav-link>
       <a [routerLink]="'menu'" class="waves-effect">Menús</a>
@@ -23,12 +23,64 @@
       <a [routerLink]="'home'" class="waves-effect">Contacto</a>
     </mz-sidenav-link>
   </mz-sidenav>
-
   <button mz-button class="sidenav-button hide-on-large-only" id="btn-sidenav" [float]="false" [large]="false">
-    <i mz-icon-mdi [icon]="'menu'"></i>
+      <i mz-icon-mdi [icon]="'menu'"></i>
   </button>
-  <div class="fixed-action-btn click-to-toggle horizontal">
-    <a class="btn-floating btn-large button-share">
+
+  <div *ngIf="router.url==='/home';else not_home">
+    <div class="fixed-action-btn click-to-toggle horizontal">
+      <a class="btn-floating btn-large teal button-share">
+      <i class="large material-icons">share</i>
+    </a>
+      <ul>
+        <li>
+          <a mz-button [float]="'true'" ButtonType="LinkButton" href="https://es-es.facebook.com/lagolacomerybeber/" target="_blank">
+            <i mz-icon-mdi
+            [align]="'right'"
+            [icon]="'facebook'"
+            [size]="'small'">
+            </i>
+        </a>
+        </li>
+        <li class="hide-on-med-and-down">
+          <a mz-button [float]="'true'" ButtonType="LinkButton" href="https://twitter.com/lagolacyb" target="_blank">
+            <i mz-icon-mdi
+            [align]="'right'"
+            [icon]="'twitter'"
+            [size]="'small'">
+            </i>
+        </a>
+        </li>
+        <li>
+          <a mz-button [float]="'true'" ButtonType="LinkButton" href="https://goo.gl/maps/B4CXigfJdmt" target="_blank">
+            <i mz-icon-mdi
+            [align]="'right'"
+            [icon]="'google'"
+            [size]="'small'">
+            </i>
+        </a>
+        </li>
+        <li>
+          <a mz-button [float]="'true'" ButtonType="LinkButton" href="https://www.tripadvisor.es/Restaurant_Review-g562644-d12064396-Reviews-La_Gola-Alcala_De_Henares.html"
+            target="_blank">
+           <i class="fa fa-tripadvisor"></i>
+        </a>
+        </li>
+        <li>
+          <a mz-button [float]="'true'" ButtonType="LinkButton" href="https://es-es.facebook.com/lagolacomerybeber/" target="_blank">
+            <i mz-icon-mdi
+            [align]="'right'"
+            [icon]="'instagram'"
+            [size]="'small'">
+            </i>
+        </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <ng-template #not_home>
+    <div class="fixed-action-btn click-to-toggle horizontal">
+    <a class=" btn-floating btn-large button-share">
       <i class="large material-icons">share</i>
     </a>
     <ul>
@@ -76,6 +128,7 @@
       </li>
     </ul>
   </div>
+  </ng-template>
 </header>
 
 <main>
