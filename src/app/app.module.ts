@@ -6,6 +6,8 @@ import { RouterModule } from '@angular/router';
 import { MaterializeModule } from 'ng2-materialize';
 import { AngularFireModule } from 'angularfire2';
 import { ROUTES } from './app.routing';
+import { environment } from '../environments/environment';
+
 
 import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
@@ -21,7 +23,7 @@ import { ContactModule } from './contact/contact.module';
     BrowserAnimationsModule,
     RouterModule.forRoot(ROUTES),
     MaterializeModule.forRoot(),
-
+    AngularFireModule.initializeApp(environment.firebase),
     HomeModule,
     MenuModule,
     ContactModule
