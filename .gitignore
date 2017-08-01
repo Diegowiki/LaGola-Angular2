@@ -47,6 +47,6 @@ Thumbs.db
 **/node_modules/*
 **/.firebaserc
 
-.environment.prod.ts
-.environment.ts
-src/environments/environment.prod.ts
+environment.prod.ts
+environment.ts
+
