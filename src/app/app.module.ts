@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 
 import { MaterializeModule } from 'ng2-materialize';
+import { AngularFireModule } from 'angularfire2';
 import { ROUTES } from './app.routing';
 
 import { AppComponent } from './app.component';

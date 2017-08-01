@@ -4,6 +4,7 @@
 /dist
 /tmp
 /out-tsc
+/environments
 
 # dependencies
 /node_modules
@@ -46,5 +47,6 @@ Thumbs.db
 **/node_modules/*
 **/.firebaserc
 
-environment.prod.ts
-environment.ts
+.environment.prod.ts
+.environment.ts
+src/environments/environment.prod.ts
