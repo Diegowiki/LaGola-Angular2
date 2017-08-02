@@ -2,9 +2,9 @@
 @import "colors";
 
 @font-face {
-font-family: 'Ailerons'; 
-src: url('assets/Ailerons.ttf') ; 
-font-style: normal;
+ font-family: 'Ailerons'; 
+ src: url('assets/Ailerons.ttf') ; 
+ font-style: normal;
 }
 
 body {
@@ -15,4 +15,16 @@ h1, h2, h3 {
     font-family: Ailerons;
     margin: 0!important;
     padding: 0!important;
+}
+
+h4, h5, h6, p{
+    font-family: 'Rubik', cursive;
+
+}
+p{
+    font-size: 20px;
+}
+
+span{
+
 }

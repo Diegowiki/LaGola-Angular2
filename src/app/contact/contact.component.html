@@ -1,12 +1,26 @@
 <div class="bgImg"></div>
 <div class="info">
-  <h1>HOLA CABESE HUEVOsadasdasdasd</h1>
+  <div class="row">
+    <mz-card [backgroundClass]="'teal lighten-1'" class="card-contact col s12 m12 l12 bg-color1;">
+      <mz-card-content>
+        <h5 class="txt-color2">Telefono: {{telefono}} <br><br> e-mail: {{email}} <br><br> {{direccion}}</h5>
+      </mz-card-content>
+    </mz-card>
+  </div>
 </div>
 <div class="map z-depth-5">
   <agm-map [latitude]="lat" [longitude]="lng" [styles]="MapTypeStyles" [clickableIcons]="clickableIcons" [zoom]="zoom" [maxZoom]="maxZoom"
     [minZoom]="minZoom" [fullscreenControl]="fullscreenControl" [gestureHandling]="gestureHandling" [keyboardShortcuts]="keyboardShortcuts"
     [mapDraggable]="mapDraggable" [mapTypeControl]="mapTypeControl" [mapTypeId]="mapTypeId" [rotateControl]="rotateControl"
-    [scrollwheel]="scrollwheel" [zoomControl]="zoomControl" [zoomControlOptions] = "zoomControlOptions" [disableDefaultUI]="disableDefaultUI">
-    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+    [scrollwheel]="scrollwheel" [zoomControl]="zoomControl" [zoomControlOptions]="zoomControlOptions" [disableDefaultUI]="disableDefaultUI">
+    <agm-marker [latitude]="lat" [longitude]="lng" [label]="label" [openInfoWindow]="openInfoWindow">
+      <agm-info-window [disableAutoPan]="true">
+        <div>
+        <a href="https://www.google.es/maps/dir//La+Gola+(Comer+y+Beber),+C%2F+Juan+Ram%C3%B3n+Jim%C3%A9nez+s%2Fn,+28805+Alcal%C3%A1+de+Henares,+Madrid/@40.5063257,-4.2998805,9z/data=!4m16!1m7!3m6!1s0xd424be407bf605d:0x2a570610528b37c!2sLa+Gola+(Comer+y+Beber)!3b1!8m2!3d40.510124!4d-3.353459!4m7!1m0!1m5!1m1!1s0xd424be407bf605d:0x2a570610528b37c!2m2!1d-3.353459!2d40.510124" target="_blank">
+            <strong>Cómo llegar</strong>
+          </a>
+        </div>
+      </agm-info-window>
+    </agm-marker>
   </agm-map>
 </div>

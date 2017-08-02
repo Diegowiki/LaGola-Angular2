@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { GoogleMapsAPIWrapper } from '@agm/core';
 
 declare var google: any;
@@ -9,11 +9,18 @@ declare var google: any;
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit {
+  telefono: number;
+  email: string;
+  direccion: string;
+  // marker
+  label = 'G';
+  openInfoWindow = true;
+  // map
   lat = 40.510124;
   lng = -3.353459;
   clickableIcons = false;
-  fullscreenControl	= true;
+  fullscreenControl = true;
   gestureHandling = 'auto';
   keyboardShortcuts = false;
   mapDraggable = true;
@@ -42,7 +49,7 @@ export class ContactComponent {
     {
       featureType: 'poi',
       elementType: 'labels.text.fill',
-      stylers: [{ color: '#343F48' }, {visibility: 'simplified'}]
+      stylers: [{ color: '#343F48' }, { visibility: 'simplified' }]
     },
     {
       featureType: 'poi.park',
@@ -105,5 +112,11 @@ export class ContactComponent {
       stylers: [{ color: '#4db6ac' }]
     }
   ];
+
+  ngOnInit() {
+    this.telefono = 911378951;
+    this.email = 'info@lagola.com';
+    this.direccion = 'C/ Juan Ramón Jiménez s/n, 28805 Alcalá de Henares, España';
+  }
 
 }
