@@ -7,6 +7,8 @@ import { MaterializeModule } from 'ng2-materialize';
 import { AngularFireModule } from 'angularfire2';
 import { ROUTES } from './app.routing';
 import { environment } from '../environments/environment';
+import { AgmCoreModule } from '@agm/core';
+
 
 
 import { AppComponent } from './app.component';
@@ -24,6 +26,9 @@ import { ContactModule } from './contact/contact.module';
     RouterModule.forRoot(ROUTES),
     MaterializeModule.forRoot(),
     AngularFireModule.initializeApp(environment.firebase),
+     AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyD1BONWlwG9L6UkiVMlHXhzNDsWWbLXhqA'
+    }),
     HomeModule,
     MenuModule,
     ContactModule
