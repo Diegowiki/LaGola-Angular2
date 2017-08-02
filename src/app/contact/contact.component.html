@@ -1,4 +1,12 @@
 <div class="bgImg"></div>
-<agm-map [latitude]="lat" [longitude]="lng">
-  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-</agm-map>
+<div class="info">
+  <h1>HOLA CABESE HUEVOsadasdasdasd</h1>
+</div>
+<div class="map z-depth-5">
+  <agm-map [latitude]="lat" [longitude]="lng" [styles]="MapTypeStyles" [clickableIcons]="clickableIcons" [zoom]="zoom" [maxZoom]="maxZoom"
+    [minZoom]="minZoom" [fullscreenControl]="fullscreenControl" [gestureHandling]="gestureHandling" [keyboardShortcuts]="keyboardShortcuts"
+    [mapDraggable]="mapDraggable" [mapTypeControl]="mapTypeControl" [mapTypeId]="mapTypeId" [rotateControl]="rotateControl"
+    [scrollwheel]="scrollwheel" [zoomControl]="zoomControl" [zoomControlOptions] = "zoomControlOptions" [disableDefaultUI]="disableDefaultUI">
+    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+  </agm-map>
+</div>
