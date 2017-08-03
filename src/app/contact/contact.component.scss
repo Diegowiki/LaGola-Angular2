@@ -21,14 +21,14 @@
     }
       
     @media #{$small-and-down} {
-
-      padding: 0;
+            padding: 0;
       margin: 0;
       position: relative;
  
 
     }
     @media #{$xsmall}{
+  
       padding: 0;
       padding-top: 30px;
       margin: 0;
@@ -54,8 +54,10 @@
     
   }
 
-  .txt-bg{
-    background-color: rgba($color1, 0.4);
+  h5{
+    @media #{$small-and-down} {
+        font-size: 18px;
+    }
   }
 
   .map{
