@@ -15,6 +15,7 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
 import { MenuModule } from './menu/menu.module';
 import { ContactModule } from './contact/contact.module';
+import { CartaModule } from './carta/carta.module';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ContactModule } from './contact/contact.module';
     }),
     HomeModule,
     MenuModule,
-    ContactModule
+    ContactModule,
+    CartaModule
   ],
   providers: [],
   bootstrap: [AppComponent]
