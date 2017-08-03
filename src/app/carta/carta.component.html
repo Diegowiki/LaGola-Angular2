@@ -1,1 +1,17 @@
-<h1>CARTA</h1>
+<div class="bgImg"></div>
+<div class="box">
+    <div class="carta-titulo" *ngFor="let carta of cartas">
+        <h2>{{carta.title}}</h2>
+        <mz-collapsible [mode]="'accordion'">
+            <mz-collapsible-item [active]="true">
+                <mz-collapsible-item-header>
+                    {{carta.}}
+                </mz-collapsible-item-header>
+                <mz-collapsible-item-body>
+                    {{}}
+                </mz-collapsible-item-body>
+            </mz-collapsible-item>
+        </mz-collapsible>
+    </div>
+
+</div>
