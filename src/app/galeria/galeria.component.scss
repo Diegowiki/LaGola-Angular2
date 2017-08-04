@@ -1,2 +1,10 @@
 @import "../../colors";
 @import "../../_variables";
+
+.galeria{
+    
+    @media #{$medium-and-down} {
+        position: relative;
+        z-index: 20;
+    }
+}

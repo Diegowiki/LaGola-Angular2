@@ -2,6 +2,8 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterializeModule } from 'ng2-materialize';
+import { NgxGalleryModule } from 'ngx-gallery';
+
 
 import { GaleriaComponent } from './galeria.component';
 
@@ -9,7 +11,8 @@ import { GaleriaComponent } from './galeria.component';
   imports: [
     BrowserAnimationsModule,
     CommonModule,
-    MaterializeModule
+    MaterializeModule,
+    NgxGalleryModule
   ],
   declarations: [ GaleriaComponent ],
 })

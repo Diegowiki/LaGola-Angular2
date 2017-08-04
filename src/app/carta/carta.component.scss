@@ -21,15 +21,20 @@
     position: relative;
 }
 h2{
-    margin-top: 10%!important;
-    margin-bottom: 10%!important;
+    
     @media #{$large-and-up} {
+        margin-top: 30%!important;
+        margin-bottom: 30%!important;
         font-size: 40px;
     }
     @media #{$xsmall} {
+        margin-top: 10%!important;
+        margin-bottom: 10%!important;
         font-size: 25px;
     }
     @media #{$medium-and-down} {
+        margin-top: 10%!important;
+        margin-bottom: 10%!important;
         font-size: 30px;
     }
 }
