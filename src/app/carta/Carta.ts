@@ -1,7 +1,13 @@
-export class Carta {
+export class Seccion {
   constructor(
     public title: string,
-    public secciones: [{header: string, body: string[]}]
+    public elements: string[]
+  ) {}
+}
+export class Carta {
+  public constructor(
+      public title: string,
+      public secciones: Seccion[]
     ) { }
 }
 

@@ -1,17 +1,29 @@
 <div class="bgImg"></div>
-<div class="box">
-    <div class="carta-titulo" *ngFor="let carta of cartas">
-        <h2>{{carta.title}}</h2>
-        <mz-collapsible [mode]="'accordion'">
-            <mz-collapsible-item [active]="true">
-                <mz-collapsible-item-header>
-                    {{carta.}}
-                </mz-collapsible-item-header>
-                <mz-collapsible-item-body>
-                    {{}}
-                </mz-collapsible-item-body>
-            </mz-collapsible-item>
-        </mz-collapsible>
-    </div>
+<div class="content">
+    <div class="row">
+        <div *ngFor="let seccion of carta.secciones" class="card-sections col s6 m4 l3" (click)="bottomSheetModal.open()">
+            <mz-card [hoverable]="'true'" >
+                <mz-card-title class="center-align">
+                    <h2>{{seccion.title}}</h2>
+                </mz-card-title>
+            </mz-card>
+        </div>
+        <mz-modal #bottomSheetModal class="center-align" [options]="modalOptions">
+            <mz-modal-header style="font-family: 'Ailerons';text-decoration: underline;">
+                <h3>{{seccion.title}}</h3>
+            </mz-modal-header>
+            <mz-modal-content>
+                <ul >
+                    <li *ngFor="let element of seccion.elements">{{element}}</li>
+                </ul>
+            </mz-modal-content>
+            <mz-modal-footer>
+                <div class="box">
+                    <button mz-button class="red" [float]="'true'" [flat]="false" mz-modal-close><i mz-icon-mdi [icon]="'close'"></i></button>
+                </div>
+            </mz-modal-footer>
+        </mz-modal>
+</div>
+
 
 </div>
