@@ -16,6 +16,7 @@ import { HomeModule } from './home/home.module';
 import { MenuModule } from './menu/menu.module';
 import { ContactModule } from './contact/contact.module';
 import { CartaModule } from './carta/carta.module';
+import { GaleriaModule } from './galeria/galeria.module';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { CartaModule } from './carta/carta.module';
     HomeModule,
     MenuModule,
     ContactModule,
-    CartaModule
+    CartaModule,
+    GaleriaModule
   ],
   providers: [],
   bootstrap: [AppComponent]
